@@ -15,7 +15,7 @@
     }
 
     header {
-      background-color: #4a90e2;
+      background-color: #2c3e50; /* Color formal para el header */
       color: white;
       padding: 30px 20px;
       text-align: center;
@@ -28,7 +28,7 @@
     }
 
     h2 {
-      color: #4a90e2;
+      color: #2c3e50; /* Mismo color que el header para coherencia */
       margin-top: 30px;
     }
 
@@ -52,13 +52,13 @@
     }
 
     a {
-      color: #4a90e2;
+      color: #2c3e50; /* Mismo color formal para enlaces */
       text-decoration: none;
       transition: color 0.3s;
     }
 
     a:hover {
-      color: #2a5ea8;
+      color: #1a252f; /* Tonos más oscuros para hover */
     }
 
     /* Animaciones */
@@ -66,11 +66,59 @@
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
     }
+
+    /* Estilos para la imagen de perfil */
+    .profile-image {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid white; /* Borde blanco para resaltar */
+    }
+
+    /* ESTILOS FORMALES Y CON COLOR PARA LOS CERTIFICADOS */
+    .certificates-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .certificate-card {
+      background-color: #f8f9fa; /* Color suave y formal para el contenedor */
+      border: 1px solid #e9ecef; /* Borde fino */
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      max-width: 300px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra suave */
+    }
+
+    .certificate-image {
+      width: 100%; /* Ajusta a todo el ancho del contenedor */
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover; /* Para que las imágenes se vean bien recortadas */
+      margin-bottom: 10px;
+    }
+
+    .certificate-title {
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 0 0 5px 0;
+    }
+
+    .certificate-info {
+      font-size: 0.9em;
+      color: #6c757d; /* Color gris elegante para detalles */
+      margin: 0;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="URL_DE_TU_FOTO_DE_PERFIL" alt="Carmen Rosi Ticona Nina" class="profile-image">
   <h1>Carmen Rosi Ticona Nina</h1>
   <p>Estudiante de Ingeniería de Sistemas – UPEA</p>
 </header>
@@ -110,6 +158,34 @@
     <li>Bases de datos relacionales</li>
     <li>Gestión de versiones con Git</li>
   </ul>
+</section>
+
+<section>
+  <h2>Certificados</h2>
+  <p>Algunos de mis certificados relevantes:</p>
+  
+  <div class="certificates-container">
+    <!-- Certificado 1: Mantenimiento de Impresoras -->
+    <div class="certificate-card">
+      <img src="URL_DE_CERTIFICADO_MANTENIMIENTO_IMPRESORA" alt="Certificado de Mantenimiento de Impresoras" class="certificate-image">
+      <p class="certificate-title">Mantenimiento de Impresoras</p>
+      <p class="certificate-info">UPEA | 60 horas | Agosto 2023</p>
+    </div>
+
+    <!-- Certificado 2: Programación de Apps Móviles -->
+    <div class="certificate-card">
+      <img src="URL_DE_CERTIFICADO_APPS_MOVILES" alt="Certificado de Programación de Aplicaciones Móviles" class="certificate-image">
+      <p class="certificate-title">Programación de Aplicaciones Móviles</p>
+      <p class="certificate-info">UPEA | 80 horas | Agosto 2022</p>
+    </div>
+
+    <!-- Certificado 3: Diagramas de Flujo -->
+    <div class="certificate-card">
+      <img src="URL_DE_CERTIFICADO_DIAGRAMAS_FLUJO" alt="Certificado de Diagramas de Flujo" class="certificate-image">
+      <p class="certificate-title">Diagramas de Flujo para Algoritmos</p>
+      <p class="certificate-info">UPEA | 80 horas | Agosto 2022</p>
+    </div>
+  </div>
 </section>
 
 <section>
